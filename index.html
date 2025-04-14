@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>환기와 향안</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Diphylleia&family=Gothic+A1&family=Gowun+Dodum&family=Noto+Sans+KR&display=swap');
+
+    * {
+      background-color: rgb(238, 227, 207);
+    }
+
+    .intro {
+  position: relative;
+  font-family: 'Gothic A1', sans-serif;
+  text-decoration-line: underline;
+  color: black; /* 텍스트 색 지정 */
+  padding: 20px; /* 내부 여백 */
+  margin: auto; /* 외부 여백 */
+  width: 70vw; height: 40px;
+  top: 170px;
+  text-align: center;
+  z-index: 10; /* 다른 요소 위로 */
+  line-height: 30px;
+}
+
+    .img01 /*드로잉*/ {
+      position: absolute;
+      left: 650px;
+      top: 1200px;
+      width: 800px;
+    }
+
+    .envelope {
+      position: absolute;
+      left: 100px;
+      top: 400px;
+      cursor: pointer;
+      width: 300px;
+      height: auto;
+      z-index: 2;
+    }
+
+    .envelope:hover + .letterbox {
+      display: block;
+    }
+
+    .letterbox {
+      text-align: center;
+      font-family: 'Gowun Dodum', sans-serif;
+      font-size: 10px;
+      padding-top: 30px;
+      position: absolute;
+      left: 160px;
+      top: 350px;
+      width: 300px;
+      height: 100px;
+      background-color: rgba(240, 237, 232, 0.5);
+      border: 1px solid rgb(176, 176, 176);
+      z-index: 3;
+      display: none;
+    }
+
+    .nav {
+      position: fixed;
+      width: 100vw;
+      height: 80px;
+      top: 0px;
+      line-height: 50px;
+      z-index: 4;
+      font-family: 'Gothic A1', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .nav_inner {
+      display: inline-flex;
+      width: 500px;
+      margin: 5px;
+      justify-content: space-evenly;
+    }
+
+    .nav_inner:hover {
+      color: azure;
+      background-color: rgba(100, 100, 100, 0.2);
+      cursor: pointer;
+    }
+
+
+    .img02/*환기향안*/{
+      position: absolute;
+      left: 370px;
+      top: 430px;
+      width: 400px;
+    }
+
+
+    .envelope02{
+      width: 400px;
+      height: auto;
+      position: relative;
+      top: 700px;
+      left: 800px;
+      cursor: pointer;
+      background-color: rgba(230, 144, 144, 0);
+    }
+
+    .letterbox02 {
+      text-align: center;
+      font-family: 'Gowun Dodum', sans-serif;
+      font-size: 10px;
+      padding-top: 60px;
+      position: absolute;
+      left: 830px;
+      top: 600px;
+      width: 330px;
+      height: 200px;
+      background-color: rgba(240, 237, 232, 0.5);
+      border: 1px solid rgb(176, 176, 176);
+      z-index: 3;
+      display: none;
+    }
+
+    .envelope02:hover + .letterbox02{
+      display: block;
+    }
+
+    .envelope03{
+      width: 400px;
+      position: absolute;
+      left: 220px;
+      top:1100px;
+      cursor: pointer;
+    }
+
+    .letterbox03{
+      position: absolute;
+      top: 1180px;
+      left: 550px;
+      width: 500px;
+      height: 130px;
+      text-align: center;
+      font-family: 'Gowun Dodum', sans-serif;
+      font-size: 10px;
+      color: black;
+      padding-top: 30px;
+      position: absolute;
+      background-color: rgba(240, 237, 232, 0.5);
+      border: 1px solid rgb(176, 176, 176);
+      z-index: 10;
+      display: none; }
+
+      .envelope03:hover + .letterbox03 {
+      display: block;
+    }
+
+    .envelope04{
+      position: absolute;
+      width: 500px;
+      left: 500px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="intro">
+    안녕하세요. 이곳에서는 화백 김환기가 그의 아내 김향안에게 보낸 편지를 스크랩합니다.
+    <br>대부분의 편지는 도서 '우리들의 파리가 생각나요'에서 발췌하였으며, 계속 추가됩니다.
+    <br>김환기의 드로잉이나, 부부의 사진도 함께 스크랩하고 있습니다. 제보나 문의를 환영합니다. 
+    <br> 연락은 제 <a href="https://www.instagram.com/nooo0oo0oo0oa/">인스타그램</a>으로.
+  </div>
+
+  <img src="./편지봉투.jpg" class="envelope">
+  <div class="letterbox">
+    <center style="background-color: rgba(240, 237, 232, 0.5);">향안에게</center>
+    <br> 나 지금 들어왔어요. 아까까지 먹었던 것이 금방 또 배가 고파요. 
+    <br> 아이스박스를 열어보니 핑크빛 포도 한 송이가 남아 있어요.
+    <br> 참, 포도를 보면 포도를 먹으면, 우리들의 파리가 생각나요.
+  </div>
+  <img src="./R1280x0.jpeg" class="img01">
+
+  <div class="nav">
+    <div class="nav_inner">환기가</div>
+    <div class="nav_inner">우리들의 파리가 생각나요</div>
+    <div class="nav_inner">향안에게</div>
+  </div>
+
+  <img src="./김향안김환기.jpg" class="img02"> 
+
+  <div class="letter02">
+    <img src="./스크린샷 2025-04-09 오전 12.17.05.png" class="envelope02">
+      <div class="letterbox02">
+      <center style="background-color: rgba(240, 237, 232, 0.5);">1995년 멀리 파리에서
+        <br>첫 성탄절을 맞이하고 있을 <br> 나의 향안에게.
+      </center>
+        <br> 
+        <br> 행복과 기쁨이 있기를 바라는 마음으로 <br> 진눈깨비 날리는 성북동 산 아래에서
+        <br> 으스러지도록 안아준다 너를 <br><br> 나의 사랑 '동림이'<br>
+      </div>
+</div>
+
+  <div class="letter03">
+    <img src="./편지봉투03.jpg" class="envelope03">
+    <div class="letterbox03">
+      <br>수첩에 빛깔을 칠하다보니 또 밤이 깊었어.
+      <br> 오늘 낮에 1시간 자기는 했지만. 어때? <br> 이렇게 어떻게 해가면 될 것 같아요? 좀 달라져야겠는데.
+      <br><br>새벽 3시에서 6시.
+
+    </div>
+  </div>
+
+
+
+  <div style="
+  width: 100vw; height: 300px; position: absolute; top:2500px"></div>
+</body>
+</html>
